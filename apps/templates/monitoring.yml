@@ -17,6 +17,7 @@ spec:
     helm:
       values: |
         grafana:
+          adminPassword: admin
           service:
             type: NodePort
   syncPolicy:
