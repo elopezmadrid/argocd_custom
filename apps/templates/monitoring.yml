@@ -19,3 +19,7 @@ spec:
         grafana:
           service:
             type: NodePort
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
