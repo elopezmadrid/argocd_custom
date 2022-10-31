@@ -1,7 +1,11 @@
+#helm install argocd .\charts\argo-cd\ --values .\charts\argo-cd\Values.yaml
 argo-cd:
   dex:
     enabled: false
   server:
+    service:
+      type: NodePort
+      nodePortHttp: 31862
     extraArgs:
       - --insecure
     config:
