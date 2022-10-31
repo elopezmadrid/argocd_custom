@@ -20,6 +20,7 @@ spec:
           adminPassword: admin
           service:
             type: NodePort
+            nodePort: 32500
   syncPolicy:
     automated:
       prune: true
